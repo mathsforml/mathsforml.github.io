@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FormsAngular": {
+    "Demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/FormsAngular",
+            "outputPath": "dist/Demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "FormsAngular:build"
+            "browserTarget": "Demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "FormsAngular:build:production"
+              "browserTarget": "Demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "FormsAngular:build"
+            "browserTarget": "Demo:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "FormsAngular:serve"
+            "devServerTarget": "Demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "FormsAngular:serve:production"
+              "devServerTarget": "Demo:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "FormsAngular"
+  "defaultProject": "Demo"
 }
